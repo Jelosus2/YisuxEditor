@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>YisuxEditor</title>
+</head>
+<body>
+    <header>
+        <h1>YisuxEditor</h1>
+    </header>
+    <div class="code-area">
+        <div class="outer-div">
+            <h2><i class="fab fa-html5"></i> HTML <input type="text" id="html-fn" placeholder="File Name"> <i class="fas fa-save" id="html-btn"></i></h2>
+            <textarea id="html" oninput="Preview()"></textarea>
+        </div>
+        <div class="outer-div">
+            <h2><i class="fab fa-css3"></i> CSS <input type="text" id="css-fn" placeholder="File Name"> <i class="fas fa-save" id="css-btn"></i></h2>
+            <textarea id="css" oninput="Preview()"></textarea>
+        </div>
+        <div class="outer-div">
+            <h2><i class="fab fa-js-square"></i> JS <input type="text" id="js-fn" placeholder="File Name"> <i class="fas fa-save" id="js-btn"></i></h2>
+            <textarea id="js" oninput="Preview()"></textarea>
+        </div>
+    </div>
+    <div class="preview-area">
+        <iframe id="preview-window"></iframe>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
